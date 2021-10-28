@@ -6,7 +6,7 @@
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: url(../images/backgroundlight.png);
+  background-image: url(/images/backgroundlight.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -18,22 +18,19 @@ nav {
   align-items: center;
   position: sticky;
 }
-nav img {
+.boxLogo img {
   width: 50 px;
   padding: 1% 6%;
   margin: 0;
   border-radius: 0%;
   display: inline-block;
 }
-img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block outside;
-  border-radius: 50% 0;
-  width: 500px;
-  margin: 10px 0px 40px;
-  text-align: center;
-  flex: 5;
+.mobileLogo img {
+  display: none;
+}
+
+nav .mobileTitle {
+  display: none;
 }
 .nav-links {
   flex: 2;
@@ -42,30 +39,31 @@ img {
 .nav-links ul li {
   display: inline-block;
   list-style: none;
-  padding: 8px 24px;
+  padding: 8px 36px;
   position: relative;
 }
 .nav-links ul li a {
   color: black;
   text-decoration: none;
-  font-size: 18 px;
-  font-weight: 500;
-  letter-spacing: 2px;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 3px;
 }
 .nav-links ul li a:hover {
-  color: #f0513d;
+  color: #f1543b;
   text-decoration: none;
-  font-size: 18 px;
-  font-weight: 800;
+  font-size: 24 px;
+  font-weight: 600;
+  transition: all 0.2s ease-out;
 }
 .nav-links ul li::after {
   content: " ";
   width: 0%;
   height: 2px;
-  background: #f0513d;
+  background: #f1543b;
   display: block;
   margin: auto;
-  transition: 0.3s;
+  transition: 0.15s;
 }
 .nav-links ul li:hover::after {
   width: 100%;
@@ -76,6 +74,16 @@ img {
   text-align: center;
   width: 100%;
   padding-bottom: 200px;
+}
+img {
+  max-width: 100%;
+  max-height: 50%;
+  display: inline-block;
+  border-radius: 50%;
+  width: 500px;
+  margin: 10px 0px 40px;
+  text-align: center;
+  flex: 5;
 }
 .content {
   position: relative;
@@ -88,6 +96,12 @@ img {
 .content h1 {
   font-size: 55px;
   letter-spacing: 3px;
+  font-weight: 400;
+}
+.content h4 {
+  font-size: 36px;
+  padding: 10px;
+  font-weight: 500;
 }
 .content p {
   margin: 10px 0px 40px;
@@ -95,24 +109,20 @@ img {
   padding: 10px;
   line-height: 40px;
 }
-.content h4 {
-  font-size: 36px;
-  padding: 10px;
-}
 .content button {
   display: inline-block;
   text-decoration: none;
-  border: 50%;
-  padding: 12px 34px;
+  border: 10%;
+  padding: 22px 40px;
   font-size: 18px;
   background: transparent;
   position: relative;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 50px;
 }
 .content button:hover {
-  background: black;
-  transition: 0.3;
+  background-color: black;
+  transition: 0.3s;
   color: white;
 }
 nav .featherIconMenu {
@@ -156,38 +166,86 @@ nav .featherIconX {
   padding: 0;
 }
 
-@media only screen and (max-width: 500px 800px) {
-  .content h1 {
-    font-size: 18px;
-  }
-  .nav-links ul li {
-    display: block;
-    color: white;
-  }
-  .nav-links ul li a {
-    color: white;
-    display: block;
-  }
+@media (max-width: 700px) {
   .nav-links {
     position: absolute;
     color: white;
     background: black;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     top: 0;
-    right: -100%;
+    right: 0;
+  }
+  .nav-links ul li {
     text-align: center;
-    z-index: 2;
   }
   nav .featherIconX {
-    display: block;
+    display: inline-block;
     color: white;
+    margin: 27px;
+    text-align: right;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  nav .featherIconMenu {
+    display: block;
+    color: black;
     margin: 16px;
     text-align: right;
     font-size: 22px;
     cursor: pointer;
   }
-  nav.img {
-    image: url(../images/smalllogo.png);
+  .boxLogo img {
+    display: none;
   }
+  .mobileLogo img {
+    display: inline-block;
+    width: 50px;
+    padding: 1% 1%;
+    margin: 5px;
+    border-radius: 0%;
+    text-align: left;
+  }
+  nav {
+    display: flex;
+    padding: 3% 3%;
+    text-align: left;
+    justify-content: space-between;
+    position: sticky;
+  }
+  .content h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links ul li a {
+    color: white;
+    display: block;
+  }
+}
+
+.mySkills {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 10px;
+  line-spacing: 4px;
 }
