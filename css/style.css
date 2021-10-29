@@ -3,13 +3,14 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+
 .header {
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-image: url(/images/backgroundlight.png);
   background-position: center;
   background-size: cover;
-  position: relative;
+  position: absolute;
 }
 nav {
   display: flex;
@@ -68,6 +69,7 @@ nav .mobileTitle {
 .nav-links ul li:hover::after {
   width: 100%;
 }
+
 .heroImg {
   display: inline-block;
   align-items: center;
@@ -75,15 +77,15 @@ nav .mobileTitle {
   width: 100%;
   padding-bottom: 200px;
 }
-img {
+.content img {
   max-width: 100%;
-  max-height: 50%;
+  max-height: 100%;
   display: inline-block;
   border-radius: 50%;
   width: 500px;
   margin: 10px 0px 40px;
   text-align: center;
-  flex: 5;
+  flex: 2;
 }
 .content {
   position: relative;
@@ -91,7 +93,9 @@ img {
   margin: 0 auto;
   text-align: center;
   width: auto;
-  top: 100px;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  width: 35%;
 }
 .content h1 {
   font-size: 55px;
@@ -105,15 +109,18 @@ img {
 }
 .content p {
   margin: 10px 0px 40px;
-  font-size: 24px;
+  font-size: 30px;
   padding: 10px;
   line-height: 40px;
+  font-weight: 300;
 }
 .content button {
   display: inline-block;
   text-decoration: none;
-  border: 10%;
-  padding: 22px 40px;
+  border: 1%;
+  border-width: 1px;
+  letter-spacing: 1px;
+  padding: 22px 22px;
   font-size: 18px;
   background: transparent;
   position: relative;
@@ -131,6 +138,89 @@ nav .featherIconMenu {
 nav .featherIconX {
   display: none;
 }
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  display: flex;
+}
+.myStoryContent {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+.myStoryContent p {
+  font-size: 30px;
+  font-weight: 300;
+  width: 60%;
+  margin: auto;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  letter-spacing: 0px;
+  line-height: 50px;
+}
+.mySkills h2 {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+.row {
+  padding-top: 60px;
+  padding-bottom: 10px;
+  margin: auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.mySkillsContainer {
+  flex-basis: 24%;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.mySkillsContainer:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.mySkillsContainer p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 5%;
+  padding: 20px;
+  text-align: center;
+}
+.mySkillsContainer h4 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 30px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.mySkillsContainer img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100px;
+}
+
 .footer {
   width: 100%;
   display: inline-block;
@@ -191,7 +281,7 @@ nav .featherIconX {
     display: block;
     color: black;
     margin: 16px;
-    text-align: right;
+    text-align: auto;
     font-size: 22px;
     cursor: pointer;
   }
@@ -213,10 +303,31 @@ nav .featherIconX {
     justify-content: space-between;
     position: sticky;
   }
+  .content {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: auto;
+  }
   .content h1 {
     font-size: 30px;
     letter-spacing: 2px;
     font-weight: 400;
+  }
+  .content h4 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+  .content p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 25px;
   }
   .nav-links ul li {
     display: block;
@@ -225,27 +336,52 @@ nav .featherIconX {
     color: white;
     display: block;
   }
-}
+  h2 {
+    width: 100%;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    width: 60%;
+    margin: 20px;
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    display: flex;
+  }
+  .myStoryContent p {
+    font-size: 18px;
+    font-weight: 300;
+    width: 100%;
+    margin: 20px;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    letter-spacing: 0px;
+    line-height: 32px;
+  }
+  .row {
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
 
-.mySkills {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
-}
-.row {
-  margin-top: 5%;
-  display: flex;
-  justify-content: space-between;
-}
-h2 {
-  font-size: 36px;
-  font-weight: 600;
-}
-p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  padding: 10px;
-  line-spacing: 4px;
+  .mySkillsContainer img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 70px;
+  }
+  .footer img {
+    border-radius: 0%;
+    display: inline-block;
+    width: 300px;
+    padding: 0;
+    margin: 5px;
+    text-align: center;
+  }
 }
