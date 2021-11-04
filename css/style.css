@@ -21,7 +21,7 @@ nav {
   position: sticky;
 }
 .boxLogo img {
-  width: 50 px;
+  width: 300px;
   padding: 1% 6%;
   margin: 0;
   border-radius: 0%;
@@ -40,20 +40,20 @@ nav .mobileTitle {
 .nav-links ul li {
   display: inline-block;
   list-style: none;
-  padding: 8px 36px;
+  padding: 8px 15px;
   position: relative;
 }
 .nav-links ul li a {
   color: black;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 12px;
   font-weight: 300;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
 }
 .nav-links ul li a:hover {
   color: #f1543b;
   text-decoration: none;
-  font-size: 24 px;
+  font-size: px;
   font-weight: 600;
   transition: all 0.2s ease-out;
 }
@@ -78,7 +78,7 @@ nav .featherIconX {
 }
 
 .heroImg {
-  display: inline-block;
+  display: flex;
   align-items: center;
   text-align: center;
   width: 100%;
@@ -87,37 +87,39 @@ nav .featherIconX {
 .content img {
   max-width: 100%;
   max-height: 100%;
-  display: inline-block;
+  display: inline-flex;
   border-radius: 10px;
-  width: 500px;
-  margin: 10px 0px 40px;
+  width: 400px;
+  margin: 10px 0px 20px;
+  align-items: center;
   text-align: center;
-  flex: 2;
 }
 .content {
   position: relative;
-  display: inline-block;
+  display: inline;
   margin: 0 auto;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 10px;
-  width: 35%;
+  width: 45%;
 }
 .content h1 {
-  font-size: 55px;
+  font-size: 44px;
   letter-spacing: 3px;
-  font-weight: 400;
+  font-weight: 300;
+  display: inline-flex;
 }
 .content h4 {
-  font-size: 36px;
+  font-size: 18px;
   padding: 10px;
-  font-weight: 500;
+  font-weight: 400;
+  padding: 20px;
 }
 .content p {
   margin: 10px 0px 40px;
-  font-size: 30px;
+  font-size: 14px;
   padding: 10px;
-  line-height: 40px;
+  line-height: 32px;
   font-weight: 300;
 }
 .content button {
@@ -126,8 +128,8 @@ nav .featherIconX {
   border: 1%;
   border-width: 1px;
   letter-spacing: 1px;
-  padding: 22px 22px;
-  font-size: 18px;
+  padding: 15px 32px;
+  font-size: 12px;
   background: transparent;
   position: relative;
   cursor: pointer;
@@ -140,7 +142,7 @@ nav .featherIconX {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 600;
   width: 60%;
   margin: 0 auto;
@@ -158,7 +160,7 @@ h2 {
   padding-bottom: 10px;
 }
 .myStoryContent p {
-  font-size: 30px;
+  font-size: 14px;
   font-weight: 300;
   width: 60%;
   margin: auto;
@@ -166,7 +168,7 @@ h2 {
   padding-top: 50px;
   padding-bottom: 10px;
   letter-spacing: 0px;
-  line-height: 50px;
+  line-height: 32px;
 }
 .mySkills h2 {
   width: 60%;
@@ -205,26 +207,26 @@ h2 {
   cursor: pointer;
 }
 .mySkillsContainer p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  margin-bottom: 50px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 20px;
   padding: 20px;
   text-align: center;
 }
 .mySkillsContainer h4 {
-  font-size: 30px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 30px;
   padding: 10px;
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .mySkillsContainer img {
   max-width: 100%;
   max-height: 100%;
-  width: 100px;
+  width: 44px;
 }
 
 .footer {
@@ -240,17 +242,20 @@ h2 {
 .footer p {
   margin-bottom: 20px;
   margin-top: 20px;
+  font-size: 12px;
+  font-weight: 300;
 }
 .footer button {
   display: inline-block;
   text-decoration: none;
-  border: 50%;
   padding: 12px 34px;
-  font-size: 18px;
+  font-size: 12px;
   background: transparent;
   position: relative;
   cursor: pointer;
   border-radius: 30px;
+  border: 1%;
+  border-width: 1px;
 }
 .footer button:hover {
   background: black;
@@ -260,6 +265,7 @@ h2 {
 .footer img {
   border-radius: 0%;
   padding: 0;
+  width: 300px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -270,48 +276,6 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
-  nav {
-    display: flex;
-    padding: 3% 3%;
-    text-align: left;
-    justify-content: space-between;
-    position: sticky;
-  }
-  .nav-links ul li a {
-    color: white;
-    display: block;
-    position: relative;
-  }
-  .nav-links {
-    position: absolute;
-    color: white;
-    background: black;
-    height: 100vh;
-    width: 100vw;
-    top: 0px;
-    right: 0px;
-  }
-  .nav-links ul li {
-    text-align: center;
-    display: block;
-    background-color: black;
-  }
-  nav .featherIconX {
-    display: inline-block;
-    color: white;
-    margin: 27px;
-    text-align: right;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  nav .featherIconMenu {
-    display: block;
-    color: black;
-    margin: 16px;
-    text-align: auto;
-    font-size: 22px;
-    cursor: pointer;
-  }
   .boxLogo img {
     display: none;
   }
@@ -435,5 +399,48 @@ h2 {
     padding: 0;
     margin: 5px;
     text-align: center;
+  }
+  nav .featherIconMenu {
+    display: block;
+    color: black;
+    margin: 16px;
+    text-align: auto;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  nav .featherIconX {
+    display: inline-block;
+    color: white;
+    margin: 27px;
+    text-align: right;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  nav {
+    display: flex;
+    padding: 3% 3%;
+    text-align: left;
+    justify-content: space-between;
+    position: sticky;
+  }
+  .nav-links {
+    position: absolute;
+    display: none;
+    color: white;
+    background: black;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    right: 0px;
+  }
+  .nav-links ul li {
+    text-align: center;
+    display: none;
+    background-color: black;
+  }
+  .nav-links ul li a {
+    color: white;
+    display: absolute;
+    position: relative;
   }
 }

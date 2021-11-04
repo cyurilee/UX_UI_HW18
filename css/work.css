@@ -21,7 +21,7 @@ nav {
   position: sticky;
 }
 .boxLogo img {
-  width: 50 px;
+  width: 300px;
   padding: 1% 6%;
   margin: 0;
   border-radius: 0%;
@@ -40,15 +40,15 @@ nav .mobileTitle {
 .nav-links ul li {
   display: inline-block;
   list-style: none;
-  padding: 8px 36px;
+  padding: 8px 15px;
   position: relative;
 }
 .nav-links ul li a {
   color: black;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 12px;
   font-weight: 300;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
 }
 .nav-links ul li a:hover {
   color: #f1543b;
@@ -92,8 +92,8 @@ nav .featherIconX {
   text-align: center;
 }
 .contentWork h1 {
-  font-size: 55px;
-  font-weight: 400;
+  font-size: 44px;
+  font-weight: 300;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -103,13 +103,13 @@ nav .featherIconX {
   letter-spacing: 2px;
 }
 .contentWork button {
+  display: inline-block;
   text-decoration: none;
   border: 1%;
   border-width: 1px;
   letter-spacing: 1px;
-  font-weight: 400;
-  padding: 25px 35px;
-  font-size: 18px;
+  padding: 15px 32px;
+  font-size: 12px;
   background: transparent;
   position: relative;
   cursor: pointer;
@@ -125,7 +125,7 @@ nav .featherIconX {
   padding-top: 50px;
   padding-bottom: 0px;
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -134,7 +134,7 @@ nav .featherIconX {
   flex-direction: row;
 }
 .myWorkContainer {
-  flex-basis: 40%;
+  flex-basis: 45%;
   background: white;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -151,35 +151,39 @@ nav .featherIconX {
 }
 .myWorkContainer h1 {
   padding-bottom: 0px;
-  letter-spacing: -0.7px;
-  margin-top: 50px;
+  letter-spacing: 0px;
+  margin-top: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   width: 100%;
   font-weight: 600;
-  font-size: 55px;
+  font-size: 30px;
   text-align: center;
 }
 .myWorkContainer h5 {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 30px;
   margin-top: 2%;
   margin-bottom: 2%;
 }
 .myWorkContainer p {
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 40px;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 30px;
-  margin-bottom: 50px;
+  line-height: 28px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 .floatingImg {
   display: flex;
+  float: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: auto;
   max-width: 100%;
-  max-height: 400px;
+  max-height: 200px;
+  min-width: 50px;
   height: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -187,9 +191,10 @@ nav .featherIconX {
 .circleImg {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: auto;
   max-width: 100%;
-  max-height: 400px;
+  max-height: 200px;
+  min-width: 50px;
   border-radius: 20px;
   height: 100%;
   padding-top: 10px;
@@ -209,21 +214,20 @@ nav .featherIconX {
 .footer p {
   margin-bottom: 20px;
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 12px;
+  font-weight: 300;
 }
 .footer button {
   display: inline-block;
   text-decoration: none;
-  border: 1%;
-  border-width: 1px;
-  letter-spacing: 1px;
-  font-weight: 400;
-  padding: 20px 35px;
-  font-size: 18px;
+  padding: 12px 34px;
+  font-size: 12px;
   background: transparent;
   position: relative;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 30px;
+  border: 1%;
+  border-width: 1px;
 }
 .footer button:hover {
   background: black;
@@ -233,6 +237,7 @@ nav .featherIconX {
 .footer img {
   border-radius: 0%;
   padding: 0;
+  width: 300px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -244,14 +249,15 @@ nav .featherIconX {
     width: 100vw;
     top: 0;
     right: 0;
+    display: none;
   }
   .nav-links ul li {
     text-align: center;
-    display: block;
+    display: none;
   }
   .nav-links ul li a {
     color: white;
-    display: block;
+    display: none;
   }
   nav .featherIconX {
     display: inline-block;
@@ -354,14 +360,14 @@ nav .featherIconX {
     display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
-    height: auto;
+    height: 150px;
   }
   .circleImg {
     display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 10px;
-    height: auto;
+    border-radius: 20px;
+    height: 150px;
   }
   .footer img {
     border-radius: 0%;
